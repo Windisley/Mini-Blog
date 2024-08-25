@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../css/pagejs.css">
+        <script src="../js/pagejs.js" defer></script>
+        <title>JavaScript</title>
+    </head>
+
+    <body>
+        <div class="boxload">
+            <div class="load">
+               <!-- effect load -->
+            </div>
+       </div>
+        <section>
+            <header>
+                <p class="logo">
+                    comunidade dev
+                </p>
+
+                <nav class="menumobile">
+                    <div class="boxiconmenu active">
+                        <img src="../../imgs/menu.png" alt="">
+                    </div>
+
+                    <div class="boxmobilenone">
+                        <a href="../html/product.html">
+                            <p>
+                                produtos
+                            </p>
+                        </a>
+                        <a href="../html/index.html">
+                            <p>
+                                bloguer
+                            </p>
+                        </a>
+                        <a href="../html/sobrenos.html" target="_blank">
+                            <p>
+                                sobre nós
+                            </p>
+                        </a>
+
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <div class="boxtag">
+
+                    <h1>
+                        <span class="titlespan">
+                            Funções
+                        </span>
+                    </h1>
+
+                    <p>
+                       <span>Funções</span> são um dos conceitos fundamentais em JavaScript e são essenciais para escrever código modular, reutilizável e organizado.
+
+                    <p>
+                        O que é uma função?
+                        Uma função em JavaScript é um bloco de código que pode ser definido uma vez e executado várias vezes. 
+                        Funções permitem que você encapsule um conjunto de instruções e execute-as quando necessário.
+
+                    </p>
+
+                    <p>
+                        Declaração de <span>Funções</span>,
+                         <span>função</span> Declarativa
+                        A maneira mais comum de declarar uma função é usando a declaração de função. Ela tem a seguinte sintaxe:
+
+
+                    </p>
+
+                 <span>
+                    function saudacao(nome) {
+                        return `Olá, ${nome}!`;
+                    }
+                 </span>
+
+                 <p>
+                    <span>Funções Anônimas</span>
+                    São funções que não têm um nome. Elas podem ser usadas como valores, por exemplo, em expressões:
+                 </p>
+                 <span>
+                    const multiplicar = function(x, y) {
+                        return x * y;
+                    };
+                    
+                    console.log(multiplicar(4, 5));
+                 </span>
+
+                 <p>
+                    Funções Flecha (Arrow Functions)
+                    Introduzidas no ECMAScript 6 (ES6), são uma forma mais concisa de escrever funções. Elas não têm seu próprio this, o que pode ser útil em algumas situações.
+                 </p>
+                 <span>
+                    const dividir = (a, b) => a / b;
+
+                    console.log(dividir(10, 2));
+                 </span>
+
+                </div>
+                <div class="boxtag">
+                    <h1>
+                        <span class="titlespan">eventos</span>
+
+                    </h1>
+
+                    <p>
+                        <span>Eventos</span> são ações que ocorrem na página web, como cliques de mouse, pressionamentos de tecla, 
+                        carregamento de página, envio de formulários, entre outros. Cada evento pode ser capturado e manipulado para executar um código específico.
+                    </p>
+
+                    <p>
+                        Tipos Comuns de Eventos
+                        Aqui estão alguns tipos comuns de eventos que você pode manipular:
+                    </p>
+
+                  <span>
+                    click: Quando um usuário clica em um elemento.
+                    <br><br>
+                    dblclick: Quando um usuário dá um duplo clique em um elemento.
+                    <br><br>
+                    mouseover: Quando o cursor do mouse passa sobre um elemento.
+                    <br><br>
+                    keydown: Quando uma tecla é pressionada.
+                    <br><br>
+                    keyup: Quando uma tecla é liberada.
+                    <br><br>
+                    keypress: Quando uma tecla é pressionada e liberada.
+                    <br><br>
+                    load: Quando a página ou um recurso é carregado.
+                    <br><br>
+                    DOMContentLoaded: Quando o HTML inicial da página foi completamente carregado e 
+                    <br>
+                  </span>
+
+                    <p>
+                        Método addEventListener:
+                    </p>
+
+                    <p>
+                        O addEventListener é geralmente preferido porque permite adicionar múltiplos ouvintes para o 
+                        mesmo evento e possui um controle mais refinado sobre a propagação e captura de eventos
+                        <br><br>
+                        <span>
+                            document.getElementById('meuBotao').addEventListener('click', function() {
+                                alert('Botão clicado!');
+                              });
+                        </span>
+                    </p>
+                </div>
+
+
+
+
+                <div class="boxtag">
+                    <h1>
+                        <span class="titlespan">arrays</span>
+                    </h1>
+
+                    <p>
+
+                        Arrays em JavaScript são estruturas de dados que permitem armazenar e manipular coleções de valores. 
+                        Eles são muito versáteis e oferecem uma ampla gama de métodos e funcionalidades.
+
+                    </p>
+
+                    <p>
+                        Criação de Arrays
+                        Você pode criar arrays de várias maneiras:
+                    </p>
+
+                    <p>
+                        Usando Notação de Colchetes:
+                        <br>
+                        <span>let frutas = ['maçã', 'banana', 'laranja'];</span>
+                        <br><br>
+                        Usando o Construtor Array:
+                        <br>
+                        <span>let frutas = new Array('maçã', 'banana', 'laranja');</span>
+                        <br><br>
+                        Criar um Array com Tamanho Específico:
+                        <br>
+                        <span>let numeros = new Array(5); // Cria um array com 5 elementos indefinidos</span>
+
+                    </p>
+
+                    <p>
+                        Métodos Comuns de Arrays
+                        push() e pop(): Adicionam e removem elementos do final do array.
+                        <br><br>
+                        <span>
+                            let frutas = ['maçã', 'banana'];
+                            frutas.push('laranja'); // Adiciona 'laranja'
+                            console.log(frutas);    // ['maçã', 'banana', 'laranja']
+                            frutas.pop();           // Remove 'laranja'
+                            console.log(frutas);    // ['maçã', 'banana']
+                        </span>
+                    </p>
+
+                    <p>
+                        forEach(): Executa uma função para cada elemento do array.
+                        <br><br>
+                        <span>
+                            let frutas = ['maçã', 'banana', 'laranja'];
+                            frutas.forEach(function(fruta) {
+                              console.log(fruta);
+                            });</span>
+                    </p>
+
+
+                </div>
+
+
+
+            </main>
+
+        </section>
+    </body>
+
+    </html>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+        <link rel="stylesheet" href="../css/pagecss.css">
+        <script src="../js/pagecss.js" defer></script>
+        <title>html</title>
+    </head>
+
+    <body>
+        <section>
+            <div class="boxload">
+                <div class="load">
+                   <!-- effect load -->
+                </div>
+           </div>
+            <header>
+                <p class="logo">
+                    comunidade dev
+                </p>
+
+                <nav class="menumobile">
+                    <div class="boxiconmenu active">
+                        <img src="../../imgs/menu.png" alt="">
+                    </div>
+
+                    <div class="boxmobilenone">
+                        <a href="../html/product.html">
+                            <p>
+                                produtos
+                            </p>
+                        </a>
+                        <a href="../html/index.html">
+                            <p>
+                                bloguer
+                            </p>
+                        </a>
+                        <a href="../html/sobrenos.html" target="_blank">
+                            <p>
+                                sobre nós
+                            </p>
+                        </a>
+
+                    </div>
+                </nav>
+            </header>
+
+            <main>
+                <div class="boxtag">
+
+                    <h1>
+                        <span class="titlespan">
+                            classes
+                        </span>
+                    </h1>
+
+                    <p>
+                        No CSS, uma <span>classe</span> é uma forma de aplicar estilos a um grupo de elementos HTML.
+                        Classes são usadas para agrupar elementos que
+                        compartilham estilos comuns e são muito úteis para aplicar estilos de maneira específica e
+                        reutilizável. Vamos explorar os conceitos e práticas relacionados às classes em CSS.
+
+                    <p>
+                        Uma classe é definida no CSS usando um ponto (.) seguido pelo nome da classe. A sintaxe para
+                        aplicar uma classe a um elemento HTML é a seguinte:
+
+                    </p>
+                    <span>
+                        .paragrafo {
+                        propriedade: valor;
+                        }
+                        <br><br>
+                        < p class="paragrafo">
+                            texto da pagina 1 </ p>
+                        <br><br>
+                        < p class="paragrafo">
+                            texto da pagina 2
+                        </ p>
+
+                    </span>
+
+                    <p>
+                        Nomenclatura: Use nomes de classes descritivos e específicos para evitar conflitos e melhorar a
+                        legibilidade do código.
+                        <br><br>
+                        Convenções: Siga convenções de nomenclatura, como BEM (Block, Element, Modifier) para uma
+                        estrutura mais organizada.
+                        <br><br>
+                        Modularidade: Organize seu CSS em módulos e reutilize classes sempre que possível para manter o
+                        código gerenciável.
+
+
+                    </p>
+
+                    <p>
+                        <span>classes</span> são uma parte fundamental do CSS que permitem aplicar estilos de maneira
+                        modular e reutilizável. Usando classes, você pode manter seu código limpo e organizado,
+                        além de criar estilos consistentes em diferentes partes de seu site. Entender como utilizar e
+                        combinar classes eficientemente é essencial para o desenvolvimento front-end.
+
+                    </p>
+
+                </div>
+                <div class="boxtag">
+                    <h1>
+                        <span class="titlespan"> id</span>
+
+                    </h1>
+
+                    <p>
+                        Em HTML e CSS, o atributo <span>id</span> é utilizado para identificar de forma única um
+                        elemento na página. Diferente das classes, que podem ser aplicadas a múltiplos elementos,
+                        um ideid só pode ser atribuído a um único elemento na página e, da mesma forma, um elemento só
+                        deve ter um <span>id</span> único.
+                    </p>
+
+                    <p>
+                        Especificidade: No CSS, o seletor de <span>id</span> tem uma especificidade maior do que os
+                        seletores de classe e de elemento.
+                        Isso significa que estilos aplicados através de um seletor de <span>id</span> terão prioridade
+                        sobre estilos aplicados por seletores de classe.
+                    </p>
+
+                    <p>
+                        Uso no JavaScript: <span>id</span> são frequentemente utilizados para manipular elementos no
+                        JavaScript. O método document.getElementById()permanenteidespecialmente
+                    </p>
+
+                    <p>
+                        exemplo
+                        <br><br>
+                        <span>
+                            #paragrafo{
+                            propriedade{valor}}
+                            <br><br>
+                            < p id="paragrafo"> texto da pagina </ p>
+                        </span>
+
+                    </p>
+                </div>
+
+
+
+
+                <div class="boxtag">
+                    <h1>
+                        <span class="titlespan">pseudo-elementos em CSS</span>
+                    </h1>
+
+                    <p>
+
+                        Os <span>pseudo-elementos</span> em CSS são uma poderosa funcionalidade que permite adicionar
+                        estilos a partes específicas de um elemento HTML,
+                        que não podem ser selecionadas diretamente com seletores de elementos, classes ou IDs. Eles
+                        ajudam a criar efeitos visuais e estilizar o
+                        conteúdo de maneira mais refinada e detalhada. Os pseudo-elementos são representados por ::
+                        (duas barras de dois pontos) seguidas pelo nome do pseudo-elemento.
+
+
+                    </p>
+
+                    <p>
+                        pseudoelementos mais comuns são:
+                        <br><br>
+                        <span>::before:</span> Insere um conteúdo antes do conteúdo real do elemento.
+                        <br>
+                        <span>::after:</span> Insere um conteúdo após o conteúdo real do elemento.
+                        <br>
+                        <span>::first-line:</span> Aplica estilos à primeira linha do bloco de texto.
+                        <br>
+                        <span>::first-letter:</span> Aplica estilos à primeira letra do bloco de texto.
+                    </p>
+
+                    <p>
+                        Embora você não possa acessar diretamente os <span>pseudoelementos</span> com JavaScript, você
+                        pode alterar os estilos dos elementos que eles afetam.
+                        Por exemplo, você pode mudar o CSS de um elemento, e isso, por sua vez, mudará os
+                        <span>pseudoelementos</span>. Aqui está um exemplo básico:
+                    </p>
+
+                    <span>
+                        document.querySelector('p').style.setProperty('--my-color', 'blue');
+                        <br>
+                        // E o CSS associado:
+                        <br>
+                        p::before {
+                        <br>
+                        content: "Nota: ";
+                        <br>
+                        color: var(--my-color);
+                        }
+                    </span>
+
+
+                </div>
+
+
+
+            </main>
+
+        </section>
+    </body>
+
+    </html>
+</body>
+
+</html>

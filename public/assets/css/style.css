@@ -1,0 +1,333 @@
+
+:root{
+    --dark-color: #212226;
+    --white-color: #D7D7D9;
+    --light-black: #3C3D40;
+    --gray: #9FA3A6;
+    --gray-dark: #666A73;
+    --white:  #f1f1f1;
+    --titlesize: clamp(1.2rem, 2vw, 1.5rem);
+    --psize: clamp(.8rem, 1.5vw, 1rem);
+    --delaypage: 2s;
+    }
+    
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+body{
+    font-size: 65%;
+    font-family:"Poppins", sans-serif, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section{
+    width: 100%;
+    max-width: 1400px;
+    min-width: 300px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxload{
+   width: 100%;
+   max-width: 1400px;
+   min-height: 100vh;
+   margin: 0 auto;
+   position: fixed;
+   background-color: #212226;
+  
+}
+
+.load{
+ width: 100px;
+ height: 100px;
+ margin: 0 auto;
+ background-color: transparent;
+ border: 10px solid var(--white-color);
+ border-top: 10px solid var(--gray-dark);
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ animation: load .7s infinite linear;
+ border-radius: 50%;
+ transform: rotate(0);
+
+}
+
+@keyframes load{
+   0%{
+      transform: rotate(360deg);
+   }
+}
+
+ section header{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #212226;
+ }
+
+ section header p{
+    width: 100%;
+    max-width: 400px;
+    text-align: start;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--white-color);
+    letter-spacing: .1px;
+    cursor: pointer;
+    
+ }
+
+ section header ~ main{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 100%;
+    margin-top: 1.5rem;
+  
+ }
+
+ main .post{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    border: 1px solid var(--light-black);
+    background-color: var(--dark-color);
+    padding: 1rem;
+   filter: grayscale(0%);
+   transition: all 2.5s ease; 
+   transform: translateY(0);
+ }
+
+ main .postnovisible{
+   width: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
+   height: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 1rem;
+   border: 1px solid var(--light-black);
+   background-color: var(--dark-color);
+   padding: 1rem;
+   filter: grayscale(100%);
+ 
+
+}
+
+
+
+ main .post .boximg{
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    min-height: 100%;
+    
+ }
+ main .post img{
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 200px;
+  
+  object-fit: cover;
+  object-position: center center;
+  border: 1px solid var(--white-color);
+ cursor: pointer;
+ } 
+
+ main .post .boxtitle{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1.2rem;
+ }
+
+ main .post .boxtitle h1{
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: start;
+    letter-spacing: .2px;
+    font-weight: 700;
+
+    color: var(--white-color);
+ }
+
+ main .post .boxtitle p{
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: clamp(.7rem, 1vw, .8rem);
+    text-transform: capitalize;
+    text-align: start;
+    letter-spacing: .2px;
+    font-weight: 400;
+    color: var(--white-color);
+ }
+
+ #sectionproduct{
+  padding-bottom: 2rem;
+ }
+
+ .boxproduct{
+   width: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 1rem;
+ }
+
+ .boxproduct .contentproduct{
+   width: 100%;
+   max-width: 400px;
+   min-width: 200px;
+   max-height: 100%;
+   min-height: 300px;
+   padding: 2rem;
+   margin-top: 2rem;
+   border: 1px solid var(--dark-color);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 1rem;
+   border-radius: 8px;
+   background: linear-gradient(180deg, rgb(245, 110, 132), rgb(255, 182, 193));
+   animation: showone 2s 1 ease-in-out;
+ }
+
+ @keyframes showone{
+   from{
+      opacity: 0;
+      filter: blur(6px);
+   }
+
+   to{
+      from{
+         opacity: 1;
+         filter: blur(0);
+      }
+   }
+ }
+
+ .boxproduct .contentproduct h1{
+   text-align: center;
+   max-width: 90%;
+   margin: 0 auto;
+   font-size: clamp(1rem, 1vw, 1.1rem);
+   text-transform: uppercase;
+   letter-spacing: .2px;
+   color: var(--dark-color);
+
+ }
+
+ .boxproduct .contentproduct p{
+   text-align: start;
+   max-width: 90%;
+   margin: 0 auto;
+   font-size: clamp(.8rem, 1vw, 1rem);
+   text-transform: capitalize;
+   letter-spacing: .2px;
+   color: var(--dark-color);
+   
+   margin-top: .6rem;
+ }
+
+
+
+
+ .boxproduct .contentproduct button{
+   width: 100%;
+   max-width: 300px;
+   margin: 0 auto;
+   /* border: 1px solid var(--dark-color); */
+   border: 1px solid  rgb(0, 51, 102);;
+   padding: 7px 21px;
+   border-radius: 6px;
+   text-transform: uppercase;
+   letter-spacing: .1px;
+   background-color: var(--dark-color);
+   color: var(--white-color);
+   font-size: 1rem;
+   cursor: pointer;
+   font-weight: 600;
+   transition: all .5s ease-in-out;
+   margin-top: .8rem;
+ }
+
+ .boxproduct .contentproduct button:hover{
+   background-color: var(--light-black);
+ }
+
+ #sectionsobre{
+   padding-bottom: 2rem;
+   
+ }
+
+ .boxsobre{
+   width: 80%;
+   margin: 0 auto;
+   min-height: 80vh;
+   border: 1px solid var(--gray);
+   margin-top: 3rem;
+   padding: 1.5rem;
+ }
+
+ .boxsobre h1, h2{
+   width: 100%;
+   margin: 0 auto;
+   max-width: 400px;
+   text-align: center;
+   font-size: var(--titlesize);
+   margin-top: 2rem;
+   text-transform: uppercase;
+    
+ }
+
+ .boxsobre p{
+   width: 100%;
+   margin: 0 auto;
+   max-width: 700px;
+   text-align: start;
+   font-size: clamp(1rem, 1vw, 1.1rem);
+   margin-top: 1rem;
+   text-transform: capitalize;
+   
+ }
+
+
+
+
+
